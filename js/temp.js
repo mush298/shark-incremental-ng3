@@ -93,7 +93,7 @@ function updateTemp() {
 
     tmp.corrupt_start = CORRUPTION.limit()
 
-    let x = CURRENCIES.corrupt.amount.max(10).log10().pow(2)
+    let x = CURRENCIES.corrupt.amount.max(10).log10().pow(2) //yeah
         
     if (hasCE(2)) x = x.pow(CORRUPTION.effects[2].effect(0))
 
