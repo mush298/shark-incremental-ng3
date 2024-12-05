@@ -36,7 +36,7 @@ const CONSTELLATION = {
             name: "stellar-fish",
             req: 1,
             effect(r,d) {
-                let x = d ? expPow(r.max(0),0.5).div(10).add(1) : hasInfinityUpgrade(5) ? r.log10().div(4).add(1) : r.min(1e29).log10().div(4).add(1)
+                let x = d ? expPow(r.max(0),0.5).div(10).add(1) : hasInfinityUpgrade(5) ? r.add(1).log10().div(4).add(1) : r.add(1).min(1e29).log10().div(4).add(1)
                 return x
             },
             effDesc: x=>formatPow(x,3),
