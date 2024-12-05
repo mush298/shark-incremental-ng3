@@ -149,7 +149,7 @@ for (let i = 0; i < INFINITY_UPGRADES.length; i++) {
  el('infinity-power').innerHTML = lang_text('infinity-power', format(player.inf.power), formatGain(CURRENCIES.infinity_power.amount, CURRENCIES.infinity_power.gain), INFINITY.power_formula(player.inf.power))
 
  el('ordinal-generate').innerHTML = lang_text('ordinal-generate', `<b>${ordinals[player.inf.ordinal + 1]}</b>`, format(INFINITY.ordinal_cost(player.inf.ordinal + 1)))
- el('ordinal-generate').style.display = el_display(player.inf.ordinal < 23)
+ el('ordinal-generate').style.display = el_display(player.inf.ordinal < 23) //no beta we die like george
  for (let i = 0; i < 24; i++) {
     el(`ordinal${i}`).innerHTML = lang_text('ordinal-amount', `<b>${format(CURRENCIES[`ordinal${i}`].amount)}</b>`, formatGain(CURRENCIES[`ordinal${i}`].amount, CURRENCIES[`ordinal${i}`].gain), `<b>${ordinals[i]}</b>`, `<b>${ i - 1 >= 0 ? ordinals[i - 1] : toTextStyle('Infinity Power', 'infinity')}</b>`, formatMult(CURRENCIES[`ordinal${i}`].mult))
     el(`ordinal${i}`).style.display = el_display(player.inf.ordinal >= i)
