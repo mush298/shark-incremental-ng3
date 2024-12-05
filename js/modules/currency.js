@@ -58,7 +58,7 @@ const CURRENCIES = {
 
      
 
-            return x
+            return x.add(1)
         },
     },
     prestige: {
