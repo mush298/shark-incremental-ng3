@@ -27,7 +27,7 @@ const CURRENCIES = {
             x = expPow(x,coreReactorEffect(8))
             x = expPow(x,constellationBoostEffect(0,false))
 
-            x = expPow(x,INFINITY.power_formula(player.inf.power))
+            x = expPow(x,INFINITY.power_formula(player.inf.power.add(1)))
 
             var s = E('ee40'), pre_s = x
 
