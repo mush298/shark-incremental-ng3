@@ -231,9 +231,8 @@ const RESETS = {
     
                 setTimeout(()=>{
                     el('app').style.animation = ""
-                },10000)
+                },5000)
             }
-    
            
 
          
