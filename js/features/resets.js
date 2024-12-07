@@ -226,8 +226,8 @@ const RESETS = {
             this.doReset()
 
 
-            if (!hasInfinityUpgrade(3)) {
-                el('app').style.animation = "inf_reset_1 10s 1"
+            if (!hasInfinityUpgrade(1)) {
+                el('app').style.animation = "inf_reset_1 5s 1"
     
                 setTimeout(()=>{
                     el('app').style.animation = ""
@@ -245,13 +245,7 @@ const RESETS = {
         doReset() {
 
         
-        if (!hasInfinityUpgrade(1)) {
-            el('app').style.animation = "inf_reset_1 5s 1"
-
-            setTimeout(()=>{
-                el('app').style.animation = ""
-            },10000)
-        }
+        
 
             player.singularity.dm = E(0)
 
